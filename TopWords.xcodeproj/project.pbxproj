@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E0950F228BFBB8A00CE347C /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0950F128BFBB8A00CE347C /* MasterViewController.swift */; };
 		4E8DE3D728BD544300DF5DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE3D628BD544300DF5DED /* AppDelegate.swift */; };
 		4E8DE3D928BD544300DF5DED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE3D828BD544300DF5DED /* SceneDelegate.swift */; };
 		4E8DE3DB28BD544300DF5DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE3DA28BD544300DF5DED /* ViewController.swift */; };
@@ -17,6 +18,19 @@
 		4E8DE3F128BD544B00DF5DED /* TopWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE3F028BD544B00DF5DED /* TopWordsTests.swift */; };
 		4E8DE3FB28BD544B00DF5DED /* TopWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE3FA28BD544B00DF5DED /* TopWordsUITests.swift */; };
 		4E8DE3FD28BD544B00DF5DED /* TopWordsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE3FC28BD544B00DF5DED /* TopWordsUITestsLaunchTests.swift */; };
+		4E8DE40C28BD5AEA00DF5DED /* ScoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE40A28BD5AEA00DF5DED /* ScoreCell.swift */; };
+		4E8DE40D28BD5AEA00DF5DED /* ScoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8DE40B28BD5AEA00DF5DED /* ScoreCell.xib */; };
+		4E8DE41028BD605300DF5DED /* AnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE40E28BD605300DF5DED /* AnswerCell.swift */; };
+		4E8DE41128BD605300DF5DED /* AnswerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E8DE40F28BD605300DF5DED /* AnswerCell.xib */; };
+		4E8DE41328BD8A6100DF5DED /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE41228BD8A6100DF5DED /* ScoreViewController.swift */; };
+		4E8DE41528BD8FF800DF5DED /* PlayCompareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8DE41428BD8FF800DF5DED /* PlayCompareController.swift */; };
+		4EA8258C28C17E70000EAE90 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8258B28C17E70000EAE90 /* CircularTransition.swift */; };
+		4EA8258E28C18EF7000EAE90 /* menuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8258D28C18EF7000EAE90 /* menuController.swift */; };
+		4EA8259028C18F1E000EAE90 /* yellowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8258F28C18F1E000EAE90 /* yellowController.swift */; };
+		4EA8259228C18F35000EAE90 /* redController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA8259128C18F35000EAE90 /* redController.swift */; };
+		4EEABE7128BE603300C55A83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEABE7028BE603300C55A83 /* Constants.swift */; };
+		4EEABE7328BE668000C55A83 /* PlayCardsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEABE7228BE668000C55A83 /* PlayCardsController.swift */; };
+		4EEABE7528BE6ABA00C55A83 /* ButtonsHitFailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEABE7428BE6ABA00C55A83 /* ButtonsHitFailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E0950F128BFBB8A00CE347C /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		4E8DE3D328BD544300DF5DED /* TopWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8DE3D628BD544300DF5DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E8DE3D828BD544300DF5DED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +66,19 @@
 		4E8DE3F628BD544B00DF5DED /* TopWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8DE3FA28BD544B00DF5DED /* TopWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopWordsUITests.swift; sourceTree = "<group>"; };
 		4E8DE3FC28BD544B00DF5DED /* TopWordsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopWordsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4E8DE40A28BD5AEA00DF5DED /* ScoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreCell.swift; sourceTree = "<group>"; };
+		4E8DE40B28BD5AEA00DF5DED /* ScoreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreCell.xib; sourceTree = "<group>"; };
+		4E8DE40E28BD605300DF5DED /* AnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerCell.swift; sourceTree = "<group>"; };
+		4E8DE40F28BD605300DF5DED /* AnswerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnswerCell.xib; sourceTree = "<group>"; };
+		4E8DE41228BD8A6100DF5DED /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		4E8DE41428BD8FF800DF5DED /* PlayCompareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCompareController.swift; sourceTree = "<group>"; };
+		4EA8258B28C17E70000EAE90 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
+		4EA8258D28C18EF7000EAE90 /* menuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuController.swift; sourceTree = "<group>"; };
+		4EA8258F28C18F1E000EAE90 /* yellowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yellowController.swift; sourceTree = "<group>"; };
+		4EA8259128C18F35000EAE90 /* redController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redController.swift; sourceTree = "<group>"; };
+		4EEABE7028BE603300C55A83 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4EEABE7228BE668000C55A83 /* PlayCardsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayCardsController.swift; sourceTree = "<group>"; };
+		4EEABE7428BE6ABA00C55A83 /* ButtonsHitFailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsHitFailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +130,10 @@
 			isa = PBXGroup;
 			children = (
 				4E8DE3D628BD544300DF5DED /* AppDelegate.swift */,
+				4EEABE7028BE603300C55A83 /* Constants.swift */,
 				4E8DE3D828BD544300DF5DED /* SceneDelegate.swift */,
-				4E8DE3DA28BD544300DF5DED /* ViewController.swift */,
-				4E8DE3DC28BD544300DF5DED /* Main.storyboard */,
+				4E8DE40928BD5A6E00DF5DED /* Views */,
+				4E8DE41628BD900E00DF5DED /* Controllers */,
 				4E8DE3E228BD544A00DF5DED /* Assets.xcassets */,
 				4E8DE3E428BD544A00DF5DED /* LaunchScreen.storyboard */,
 				4E8DE3E728BD544A00DF5DED /* Info.plist */,
@@ -128,6 +157,35 @@
 				4E8DE3FC28BD544B00DF5DED /* TopWordsUITestsLaunchTests.swift */,
 			);
 			path = TopWordsUITests;
+			sourceTree = "<group>";
+		};
+		4E8DE40928BD5A6E00DF5DED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E8DE3DC28BD544300DF5DED /* Main.storyboard */,
+				4E8DE40A28BD5AEA00DF5DED /* ScoreCell.swift */,
+				4E8DE40B28BD5AEA00DF5DED /* ScoreCell.xib */,
+				4E8DE40E28BD605300DF5DED /* AnswerCell.swift */,
+				4E8DE40F28BD605300DF5DED /* AnswerCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E8DE41628BD900E00DF5DED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E8DE3DA28BD544300DF5DED /* ViewController.swift */,
+				4E0950F128BFBB8A00CE347C /* MasterViewController.swift */,
+				4EEABE7228BE668000C55A83 /* PlayCardsController.swift */,
+				4EA8258D28C18EF7000EAE90 /* menuController.swift */,
+				4EA8259128C18F35000EAE90 /* redController.swift */,
+				4EA8258F28C18F1E000EAE90 /* yellowController.swift */,
+				4E8DE41428BD8FF800DF5DED /* PlayCompareController.swift */,
+				4E8DE41228BD8A6100DF5DED /* ScoreViewController.swift */,
+				4EEABE7428BE6ABA00C55A83 /* ButtonsHitFailController.swift */,
+				4EA8258B28C17E70000EAE90 /* CircularTransition.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +294,8 @@
 			files = (
 				4E8DE3E628BD544A00DF5DED /* LaunchScreen.storyboard in Resources */,
 				4E8DE3E328BD544A00DF5DED /* Assets.xcassets in Resources */,
+				4E8DE41128BD605300DF5DED /* AnswerCell.xib in Resources */,
+				4E8DE40D28BD5AEA00DF5DED /* ScoreCell.xib in Resources */,
 				4E8DE3DE28BD544300DF5DED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,10 +321,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EEABE7528BE6ABA00C55A83 /* ButtonsHitFailController.swift in Sources */,
+				4EA8258C28C17E70000EAE90 /* CircularTransition.swift in Sources */,
 				4E8DE3DB28BD544300DF5DED /* ViewController.swift in Sources */,
 				4E8DE3D728BD544300DF5DED /* AppDelegate.swift in Sources */,
+				4EA8258E28C18EF7000EAE90 /* menuController.swift in Sources */,
 				4E8DE3D928BD544300DF5DED /* SceneDelegate.swift in Sources */,
+				4E8DE41028BD605300DF5DED /* AnswerCell.swift in Sources */,
+				4E8DE40C28BD5AEA00DF5DED /* ScoreCell.swift in Sources */,
+				4EA8259028C18F1E000EAE90 /* yellowController.swift in Sources */,
+				4E8DE41528BD8FF800DF5DED /* PlayCompareController.swift in Sources */,
+				4E8DE41328BD8A6100DF5DED /* ScoreViewController.swift in Sources */,
+				4E0950F228BFBB8A00CE347C /* MasterViewController.swift in Sources */,
 				4E8DE3E128BD544300DF5DED /* TopWords.xcdatamodeld in Sources */,
+				4EA8259228C18F35000EAE90 /* redController.swift in Sources */,
+				4EEABE7128BE603300C55A83 /* Constants.swift in Sources */,
+				4EEABE7328BE668000C55A83 /* PlayCardsController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
