@@ -15,9 +15,14 @@ struct K {
         static let toCheckScore = "toCheckScore"
     }
     struct Labels{
-        static let playCardsTop = "Translate the word:"
-        static let playCardsBottomBeforeFlip = "Touch card to check..."
-        static let playCardsBottomAfterFlip = "Did you hit?"
+        static let playCardsHeader = "Mentally translate the word\nMentalmente traduce la palabra:"
+        static let playCardsMiddle = "Translates/\nTraduce"
+        static let playCardsFooterBeforeFlip = "Tap the card to check.../\nToca la carta para verificar..."
+        static let playCardsFooterAfterFlip = "Did you get it right?/\nAcertaste?"
+        
+        static let playCompareHeader = "Answer 'True' of 'False'\nResponde 'Verdadero' o 'Falso':"
+        static let btnTrue = "True"
+        static let btnFalse = "False"
     }
     
     struct Colors{
@@ -30,6 +35,13 @@ struct K {
         static let cardFront = "CardTopWordsFront"
     }
     
-    static let cardFlipTimer = 0.6
+    struct Animations{
+        static let pointShort = 30.0
+        static let pointLarge = 150.0
+        static let cardFlipTimer = 0.4
+    }
+    
+    static let timerDisableButtonsAnswer = 2.0
+    
     
 }
