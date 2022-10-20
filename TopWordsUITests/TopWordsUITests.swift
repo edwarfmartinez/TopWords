@@ -6,9 +6,12 @@
 //
 
 import XCTest
+@testable import TopWords
 
 class TopWordsUITests: XCTestCase {
-
+    
+   
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 
@@ -22,14 +25,41 @@ class TopWordsUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func test1_UITest() throws {
+        
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let element = app.windows.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1)
+        
+        element.children(matching: .other).element(boundBy: 0).children(matching: .button).element.tap()
+        app.buttons["cardTopWordsBack"].tap()
+        app.buttons["like"].tap()
+        app.buttons["cardTopWordsBack"].tap()
+        app.buttons["dislike"].tap()
+        let backButton = app.navigationBars["Play Cards"].buttons["Back"]
+        backButton.tap()
+        
+        element.children(matching: .other).element(boundBy: 1).children(matching: .button).element.tap()
+        let trueStaticText = app/*@START_MENU_TOKEN@*/.staticTexts["True"]/*[[".buttons[\"True\"].staticTexts[\"True\"]",".staticTexts[\"True\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        trueStaticText.tap()
+        app.buttons["False"].tap()
+        trueStaticText.tap()
+        app/*@START_MENU_TOKEN@*/.staticTexts["False"]/*[[".buttons[\"False\"].staticTexts[\"False\"]",".staticTexts[\"False\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["Play Compare"].buttons["Back"].tap()
+        
+        element.children(matching: .other).element(boundBy: 2).children(matching: .button).element.tap()
+        XCUIApplication().staticTexts["Top Hits"].tap()
+        XCUIApplication()/*@START_MENU_TOKEN@*/.staticTexts["Top Fails"]/*[[".buttons[\"Top Fails\"].staticTexts[\"Top Fails\"]",".staticTexts[\"Top Fails\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        app.navigationBars["Score"].buttons["Back"].tap()
+        
+        element.children(matching: .other).element(boundBy: 3).children(matching: .button).element.tap()
+        XCUIApplication().staticTexts["Train advanced words"].tap()
+                                                                                                                                
+        app.navigationBars["TopWords.ConfigurationView"].buttons["Back"].tap()
     }
 
+    
     func testLaunchPerformance() throws {
         if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
             // This measures how long it takes to launch your application.

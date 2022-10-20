@@ -10,6 +10,8 @@ import XCTest
 
 class TopWordsTests: XCTestCase {
 
+    var dataAccessController = DataAccessController(failsOnly: false, basicLevel: true, intermediateLevel: true, advancedLevel: true)
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -18,18 +20,43 @@ class TopWordsTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func test1_CountWords() {
+        
+        dataAccessController.LoadWords()
+        XCTAssertEqual(dataAccessController.words.count, K.Tests.totalWords)
+        
+        dataAccessController = DataAccessController(failsOnly: false, basicLevel: true, intermediateLevel: false, advancedLevel: false)
+        dataAccessController.LoadWords()
+        XCTAssertEqual(dataAccessController.words.count, K.Tests.totalBasicWords)
+        
+        dataAccessController = DataAccessController(failsOnly: false, basicLevel: false, intermediateLevel: true, advancedLevel: false)
+        dataAccessController.LoadWords()
+        XCTAssertEqual(dataAccessController.words.count, K.Tests.totalIntermediateWords)
+        
+        dataAccessController = DataAccessController(failsOnly: false, basicLevel: false, intermediateLevel: false, advancedLevel: true)
+        dataAccessController.LoadWords()
+        XCTAssertEqual(dataAccessController.words.count, K.Tests.totalAdvancedWords)
     }
-
-    func testPerformanceExample() throws {
+    
+    func test2_UpdateScore() {
+        
+        var numHits = dataAccessController.score.reduce(0) { $0 + ($1.hits) }
+        dataAccessController.UpdateScore(hit: true)
+        XCTAssertEqual(dataAccessController.score.reduce(0) { $0 + Int(($1.hits)) }, Int(numHits) + 1)
+        
+        var numFails = dataAccessController.score.reduce(0) { $0 + ($1.fails) }
+        dataAccessController.UpdateScore(hit: false)
+        XCTAssertEqual(dataAccessController.score.reduce(0) { $0 + Int(($1.fails)) }, Int(numFails) + 1)
+        
+    }
+    
+    
+    
+    func test3_PerformanceLoadWords() throws {
         // This is an example of a performance test case.
         self.measure {
-            // Put the code you want to measure the time of here.
+            dataAccessController.LoadWords()
+            dataAccessController.LoadScore()
         }
     }
 

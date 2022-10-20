@@ -15,9 +15,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        return true
+        let defaults = UserDefaults.standard
+            let isPreloaded = defaults.bool(forKey: "isPreloaded")
+            if !isPreloaded {
+                print("Preloading data for the first time")
+                preloadData()
+                defaults.set(true, forKey: "isPreloaded")
+            }
+            return true
     }
+   
+    func preloadData() {
+        
+    let sourceSqliteURLs = [Bundle.main.url(forResource: "Model", withExtension: "sqlite"), Bundle.main.url(forResource: "Model", withExtension: "sqlite-wal"), Bundle.main.url(forResource: "Model", withExtension: "sqlite-shm")]
 
+        let destSqliteURLs = [
+            URL(fileURLWithPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "/Model.sqlite"),
+            URL(fileURLWithPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "/Model.sqlite-wal"),
+            URL(fileURLWithPath: NSPersistentContainer.defaultDirectoryURL().relativePath + "/Model.sqlite-shm")]
+
+        for index in 0...sourceSqliteURLs.count-1 {
+            do {
+                try FileManager.default.copyItem(at: sourceSqliteURLs[index]!, to: destSqliteURLs[index])
+            } catch {
+                print("Could not preload data")
+            }
+        }
+    }
+/*
+    private func preloadData() {
+        
+        let preloadedDataKey = "didPreloadData"
+        let userDefaults = 	UserDefaults.standard
+        //if userDefaults.bool(forKey: preloadedDataKey) == false {
+            //preload
+            guard let urlPath = Bundle.main.url(forResource: "Model", withExtension: "sqlite")
+            else { return
+            }
+            
+            if let arrayContents = NSArray(contentsOf: urlPath) as? [String] {
+                for Item in arrayContents {
+                    print(Item)
+                }
+            }
+            userDefaults.set(true, forKey: preloadedDataKey)
+            
+        //}
+    }
+*/
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

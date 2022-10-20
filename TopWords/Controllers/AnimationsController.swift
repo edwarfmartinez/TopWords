@@ -52,13 +52,14 @@ struct AnimationsController{
         return positionAnimation
     }
     
-    func performObjectAnimation(point1: Double, point2: Double, object: UIView) {
+    func performObjectAnimation(point1: Double, point2: Double, object: UIView, label: UILabel, labelValue: String) {
         UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
             object.alpha = 0
             object.transform = CGAffineTransform(translationX: 0, y: -point2)
         }) { (_) in
             UIView.animate(withDuration: 0, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
                 object.transform = CGAffineTransform(translationX: -point1, y: -point2)
+                label.text = labelValue
             }) { (_) in
                 UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.5, options: .curveEaseIn, animations: {
                     object.alpha = 1
