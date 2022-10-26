@@ -39,7 +39,7 @@ f. Repeat the steps from point a<br />
 Two cards are shown:<br />
 * Top card: Shows the word to translate<br />
 * Bottom card: Shows the translated word<br /><br />
-To play this game follow these steps:<br />
+To play this game follow these steps:<br /><br />
 a. If the translation is correct, tap the green button (True), if not tap the red button (False)<br />
 b. The score is updated and the app gives a new set of cards<br />
 c. Repeat the steps from point a<br />
@@ -53,6 +53,8 @@ It gives a detailed list of words you have played with. For each word you see:
 * Total hits and fails
 * Total Score
 
+
+
 At the bottom, there are 2 buttons: Top Hits and Top fails.
 * Top Hits: Tap to check the words you have scored the best
 * Top Fails: Tap to check the words you need to improve
@@ -61,7 +63,9 @@ At the bottom, there are 2 buttons: Top Hits and Top fails.
 
  You can set four main options for the app:
 
-1. Train Only my fails: It allows you to play the games only with the words you have failed at least once. This way you will strengthen your weaknesses
+1. Train only my fails: It allows you to play the games only with the words you have failed at least once. This way you will strengthen your weaknesses
 2. Train basic words: You will include basic words for playing the games
 3. Train intermediate words: You will include intermediate words for playing the games
 4. Train advanced words: You will include advanced words for playing the games
+
+![Screen Shot 2022-10-21 at 11 22 06 AM](https://user-images.githubusercontent.com/99278919/198087495-77b95583-2886-4be8-bec6-c7b5bda59d5f.png)
