@@ -23,6 +23,7 @@ The main menu has 4 buttons:
 
 From here, the user can access the two games, check the personal score and configure the complexity level of the games.
 
+
 ### 2. Play Cards
 To play this game follow these steps:<br /><br />
 a. Read the word to translate at the top of the screen. This word can be in English or Spanish<br />
@@ -33,6 +34,7 @@ e. The score is updated and a new word is shown to translate<br />
 f. Repeat the steps from point a<br />
 
 ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/99278919/198085323-f28aabf4-03cc-4c2b-a2f1-8f458b261116.gif)
+
 
 
 ### 3. Play Compare
@@ -47,17 +49,19 @@ c. Repeat the steps from point a<br />
 ![ezgif com-gif-maker (8)](https://user-images.githubusercontent.com/99278919/198084787-5fcb38d4-8c6c-4226-83fc-af116fcb09d1.gif)
 
 
+
 ### 4. Score
 It gives a detailed list of words you have played with. For each word you see:
 * Hits and fails per game
 * Total hits and fails
 * Total Score
 
-
+![ezgif com-gif-maker (9)](https://user-images.githubusercontent.com/99278919/198090748-18cd6668-ae66-4908-9695-0feabaa75c74.gif)
 
 At the bottom, there are 2 buttons: Top Hits and Top fails.
 * Top Hits: Tap to check the words you have scored the best
 * Top Fails: Tap to check the words you need to improve
+
 
 ### 5. Configuration
 
