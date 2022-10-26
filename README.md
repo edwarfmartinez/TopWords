@@ -8,7 +8,7 @@ iOS app for English and Spanish language learners. Learn the keywords to master 
 - Dependency Injection
 
 
-## App Architecture Diagram
+## Architecture Diagram
 ![Screen Shot 2022-10-20 at 7 07 14 PM](https://user-images.githubusercontent.com/99278919/197081868-e54f8ea5-8dc6-4dfa-8815-c1177a3f1efd.png)
 
 ## Instructions
